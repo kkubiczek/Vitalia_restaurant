@@ -342,7 +342,7 @@ a {
 }
 
 .site-header {
-  background: url("../assets/img/bg_header.jpg") center/cover fixed;
+  background: url("../assets/img/bg_header.jpg") center/cover;
   height: 80vh;
   overflow: hidden;
   position: relative;
