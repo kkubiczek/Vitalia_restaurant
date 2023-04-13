@@ -1,0 +1,50 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.gallery {
+
+    &-category {
+
+        @include large {
+            display: flex;
+        }
+    }
+
+    &-father {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+
+        @include large {
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 2px solid #fff;
+        color: #fff;
+        background-color: transparent;
+        padding: 10px 30px;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2rem;
+        width: 55%;
+        transform: translate(-50%, -50%);
+
+        @include large {
+            width: 40%;
+        }
+    }
+}

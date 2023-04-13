@@ -1,0 +1,41 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.site-header {
+
+    background: url('../assets/img/bg_header.jpg') center/cover fixed;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+
+    @include medium {
+        height: 95vh;
+    }
+
+    &__h1 {
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        margin-top: $grid-base;
+        bottom: 52%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    &__p {
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        margin-top: $grid-base;
+        bottom: 46%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+    &__icon {
+        // vertical-align: -55px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}

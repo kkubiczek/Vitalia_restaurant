@@ -1,0 +1,62 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.col {
+
+    width: 100%;
+    // border: 1px solid red;
+
+    &--md50 {
+        @include medium{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    
+    &--md33 {
+        @include medium{
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+    }
+
+    &--md25 {
+        @include medium{
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+    &--md20 {
+        @include medium{
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+    }
+    &--md60 {
+        @include medium{
+            flex: 0 0 60%;
+            max-width: 60%;
+        }
+    }
+
+
+    &--lg50 {
+        @include large{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    &--lg33 {
+        @include large{
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+    }
+    &--lg25 {
+        @include large{
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+}

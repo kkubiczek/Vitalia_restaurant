@@ -1,0 +1,41 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.menu {
+    // display: none;
+    position: fixed;
+    width: 30rem;
+    height: 100vh;
+    background-color: white;
+    z-index: 2;
+    left: -300px;
+    transition: .5s ease-in-out;
+
+    &-show {
+        transform: translateX(300px);
+    }
+
+    .material-icons {
+        position: absolute;
+        z-index: 3;
+        cursor: pointer;
+        top: 3rem;
+        right: 2rem;
+        color: black;
+        font-size: 4rem;
+    }
+    &-box-left {
+        margin-top: 150px;
+        margin-left: 35px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+        li {
+            padding: 15px;
+            transition: .5s;
+            &:hover {
+                font-weight: 700;
+            }
+        }
+    }
+}
