@@ -165,7 +165,6 @@ a {
 }
 
 .heading--h1 {
-  color: white;
   font-size: 4rem;
   line-height: 110%;
 }
@@ -199,51 +198,76 @@ a {
   font-size: 45px;
 }
 
-.nav {
+.nav, .nav-stick {
   display: flex;
-  position: absolute;
+  position: fixed;
   width: 100%;
   margin: 0;
   padding-left: 1px;
   padding-right: 1px;
 }
 @media screen and (min-width: 768px) {
-  .nav {
+  .nav, .nav-stick {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 @media screen and (min-width: 1240px) {
-  .nav {
+  .nav, .nav-stick {
     padding-left: 60px;
     padding-right: 60px;
   }
 }
-.nav-logo {
+.nav-logo, .nav-stick-logo {
   margin-top: 17px;
 }
 @media screen and (min-width: 768px) {
-  .nav-logo {
-    margin-top: 20px;
+  .nav-logo, .nav-stick-logo {
+    margin-top: 10px;
   }
 }
-.nav-social {
+.nav-social, .nav-stick-social {
   display: flex;
   justify-content: flex-end;
   margin-top: 23px;
 }
 @media screen and (min-width: 768px) {
-  .nav-social {
+  .nav-social, .nav-stick-social {
     margin-top: 25px;
   }
 }
-.nav-social--arrow {
+.nav-social--arrow, .nav-stick-social--arrow {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .nav-social--arrow {
+  .nav-social--arrow, .nav-stick-social--arrow {
     display: block;
   }
+}
+
+.nav-stick {
+  background-color: white;
+  box-shadow: 0 0 35px black;
+  height: 80px;
+  display: none;
+  position: fixed;
+  z-index: 3;
+  transition: 1s ease-in-out;
+}
+.nav-stick-logo {
+  color: black;
+  margin-top: 17px;
+}
+@media screen and (min-width: 768px) {
+  .nav-stick-logo {
+    margin-top: 10px;
+  }
+}
+.nav-stick-icon {
+  color: black;
+}
+.nav-stick-display {
+  display: flex;
 }
 
 .site {
@@ -269,7 +293,7 @@ a {
   width: 30rem;
   height: 100vh;
   background-color: white;
-  z-index: 2;
+  z-index: 4;
   left: -300px;
   transition: 0.5s ease-in-out;
 }
@@ -396,6 +420,27 @@ a {
 
 .site-menu {
   min-height: 100vh;
+}
+
+.site-party {
+  min-height: 50vh;
+}
+.site-party-h2 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 3.2rem;
+}
+@media screen and (min-width: 768px) {
+  .site-party-h2 {
+    padding-top: 100px;
+  }
+}
+.site-party-h3 {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 2.3rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
 }
 
 .text-color-white {
