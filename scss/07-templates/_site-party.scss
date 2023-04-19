@@ -21,4 +21,18 @@
         font-family: 'Ubuntu', sans-serif;
         font-weight: 300;
     }
+
+    &-padding {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &-flex {
+        display: flex;
+        padding-top: 30px;
+
+        @include medium {
+            padding-top: 70px;
+        }
+    }
 }

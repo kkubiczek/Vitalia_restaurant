@@ -29,7 +29,7 @@
         }
     }
 
-    &-caption {
+    &-caption, &-captions {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -39,12 +39,18 @@
         padding: 10px 30px;
         text-align: center;
         font-family: 'Ubuntu', sans-serif;
-        font-size: 2rem;
+        font-size: 1.9rem;
         width: 55%;
         transform: translate(-50%, -50%);
 
         @include large {
             width: 40%;
         }
+    }
+
+    &-captions {
+        width: 60%;
+        background-color: rgba(0, 0, 0, .3);
+        font-size: 1.6rem;
     }
 }

@@ -5,6 +5,10 @@
 
     width: 100%;
     // border: 1px solid red;
+    &--50{
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
 
     &--md50 {
         @include medium{

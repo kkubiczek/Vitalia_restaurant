@@ -79,6 +79,10 @@ a {
 .col {
   width: 100%;
 }
+.col--50 {
+  max-width: 50%;
+  flex: 0 0 50%;
+}
 @media screen and (min-width: 768px) {
   .col--md50 {
     flex: 0 0 50%;
@@ -345,7 +349,7 @@ a {
     transform: scale(1.05);
   }
 }
-.gallery-caption {
+.gallery-caption, .gallery-captions {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -355,14 +359,24 @@ a {
   padding: 10px 30px;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
-  font-size: 2rem;
+  font-size: 1.9rem;
   width: 55%;
   transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 1240px) {
-  .gallery-caption {
+  .gallery-caption, .gallery-captions {
     width: 40%;
   }
+}
+.gallery-captions {
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 1.6rem;
+}
+
+.figure {
+  padding: 15px;
+  overflow: hidden;
 }
 
 .site-header {
@@ -441,6 +455,19 @@ a {
   font-size: 2.3rem;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
+}
+.site-party-padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.site-party-flex {
+  display: flex;
+  padding-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .site-party-flex {
+    padding-top: 70px;
+  }
 }
 
 .text-color-white {
