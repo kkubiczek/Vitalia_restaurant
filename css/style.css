@@ -328,6 +328,11 @@ a {
   font-weight: 700;
 }
 
+@media screen and (min-width: 768px) {
+  .gallery-category {
+    display: flex;
+  }
+}
 @media screen and (min-width: 1240px) {
   .gallery-category {
     display: flex;
@@ -416,12 +421,20 @@ a {
 }
 
 .site-section {
-  min-height: 30vh;
+  min-height: 20vh;
   padding-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .site-section {
     padding-top: 130px;
+    min-height: 20vh;
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .site-section {
+    min-height: 30vh;
+    padding-top: 60px;
   }
 }
 .site-section--bg-color {
@@ -433,7 +446,7 @@ a {
 }
 
 .site-menu {
-  min-height: 100vh;
+  min-height: 30vh;
 }
 
 .site-party {

@@ -2,11 +2,18 @@
 @use '../02-tools/' as *;
 
 .site-section {
-    min-height: 30vh;
+    min-height: 20vh;
     padding-top: 60px;
 
     @include medium {
         padding-top: 130px;
+        min-height: 20vh;
+        padding-top: 100px;
+    }
+
+    @include large {
+        min-height: 30vh;
+        padding-top: 60px;
     }
 
     &--bg-color {

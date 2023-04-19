@@ -4,7 +4,10 @@
 .gallery {
 
     &-category {
-
+        @include medium {
+            display: flex;
+        }
+        
         @include large {
             display: flex;
         }
