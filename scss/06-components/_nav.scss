@@ -49,10 +49,11 @@
     background-color: white;
     box-shadow: 0 0 35px black;
     height: 80px;
-    display: none;
+    // display: none;
+    opacity: 0;
     position: fixed;
     z-index: 3;
-    transition: 1s ease-in-out;
+    transition: .5s;
 
     &-logo {
         color: black;
@@ -68,6 +69,7 @@
     }
 
     &-display {
-        display: flex;
+        // display: flex;
+        opacity: 1;
     }
 }

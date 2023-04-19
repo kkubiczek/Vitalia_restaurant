@@ -249,10 +249,10 @@ a {
   background-color: white;
   box-shadow: 0 0 35px black;
   height: 80px;
-  display: none;
+  opacity: 0;
   position: fixed;
   z-index: 3;
-  transition: 1s ease-in-out;
+  transition: 0.5s;
 }
 .nav-stick-logo {
   color: black;
@@ -267,7 +267,7 @@ a {
   color: black;
 }
 .nav-stick-display {
-  display: flex;
+  opacity: 1;
 }
 
 .site {
