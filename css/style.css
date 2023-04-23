@@ -346,7 +346,7 @@ a {
   display: block;
   max-width: 100%;
   height: auto;
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
   cursor: pointer;
 }
 @media screen and (min-width: 1240px) {
@@ -451,6 +451,7 @@ a {
 
 .site-party {
   min-height: 50vh;
+  padding-bottom: 50px;
 }
 .site-party-h2 {
   text-align: center;
@@ -481,6 +482,67 @@ a {
   .site-party-flex {
     padding-top: 70px;
   }
+}
+
+.site-work {
+  min-height: 50vh;
+  position: relative;
+}
+.site-work--bg {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .site-work--bg {
+    background: url("../../assets/img/bg_work.jpg") center/cover;
+    width: 50%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+  }
+}
+.site-work--bgcolor {
+  background-color: #053d2b;
+}
+.site-work--caption {
+  text-align: center;
+  padding-top: 70px;
+}
+@media screen and (min-width: 768px) {
+  .site-work--caption {
+    position: absolute;
+    top: 23%;
+    left: 58%;
+  }
+}
+.site-work-h3 {
+  color: white;
+  font-size: 3.5rem;
+  padding-bottom: 25px;
+}
+.site-work-h4 {
+  color: white;
+  font-size: 2.2rem;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 3rem;
+  font-weight: 300;
+}
+.site-work-button {
+  background: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  width: 70%;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.site-work-button:hover {
+  background-color: white;
+  color: black;
 }
 
 .text-color-white {
