@@ -25,11 +25,13 @@
     &--caption {
         text-align: center;
         padding-top: 70px;
+        padding-bottom: 70px;
 
         @include medium {
         position: absolute;
         top: 23%;
         left: 58%;
+        padding-bottom: 70px;
         }
     }
 

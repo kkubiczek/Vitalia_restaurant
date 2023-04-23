@@ -67,8 +67,10 @@ body {
 
 p {
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 2.8rem;
+  font-weight: 350;
+  padding: 10px;
 }
 
 a {
@@ -507,12 +509,14 @@ a {
 .site-work--caption {
   text-align: center;
   padding-top: 70px;
+  padding-bottom: 70px;
 }
 @media screen and (min-width: 768px) {
   .site-work--caption {
     position: absolute;
     top: 23%;
     left: 58%;
+    padding-bottom: 70px;
   }
 }
 .site-work-h3 {
@@ -543,6 +547,40 @@ a {
 .site-work-button:hover {
   background-color: white;
   color: black;
+}
+
+.site-qa {
+  min-height: 40vh;
+  padding-bottom: 70px;
+}
+@media screen and (min-width: 768px) {
+  .site-qa-margin {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .site-qa-margin {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+.site-qa-h3 {
+  color: black;
+  font-size: 3.5rem;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-top: 70px;
+}
+.site-qa-h4 {
+  color: black;
+  font-size: 2.2rem;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 3rem;
+  font-weight: 350;
+  margin: 0 auto;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 10px;
 }
 
 .text-color-white {
