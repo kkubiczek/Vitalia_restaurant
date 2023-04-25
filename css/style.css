@@ -634,6 +634,28 @@ a {
   padding-bottom: 25px;
 }
 
+.site-footer {
+  min-height: 90px;
+  background-color: #053d2b;
+}
+.site-footer-caption {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.site-footer-h3 {
+  color: white;
+  font-size: 3rem;
+  padding-right: 10px;
+}
+.site-footer-h4 {
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 3rem;
+  font-weight: 300;
+}
+
 .text-color-white {
   color: #fff;
   z-index: 1;

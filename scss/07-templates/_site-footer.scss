@@ -1,0 +1,27 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.site-footer {
+    min-height: 90px;
+    background-color: $color-green;
+
+    &-caption {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    &-h3 {
+        color: white;
+        font-size: 3rem;
+        padding-right: 10px;
+    }
+
+    &-h4 {
+        color: white;
+        font-size: 1.6rem;
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 3rem;
+        font-weight: 300;
+    }
+}
