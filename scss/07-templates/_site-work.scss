@@ -9,7 +9,7 @@
         display: none;
 
         @include medium {
-        background: url('../../assets/img/bg_work.jpg') center/cover;
+        background: url('../assets/img/bg_work.jpg') center/cover;
         width: 50%;
         height: 100%;
         display: block;

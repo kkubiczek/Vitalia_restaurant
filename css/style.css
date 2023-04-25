@@ -495,7 +495,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .site-work--bg {
-    background: url("../../assets/img/bg_work.jpg") center/cover;
+    background: url("../assets/img/bg_work.jpg") center/cover;
     width: 50%;
     height: 100%;
     display: block;
@@ -617,7 +617,7 @@ a {
   position: relative;
 }
 .site-kontakt-bg {
-  background: url("../../assets/img/bg_kontakt.jpg") center/cover;
+  background: url("../assets/img/bg_kontakt.jpg") center/cover;
   width: 50%;
   height: 100%;
   overflow: hidden;
