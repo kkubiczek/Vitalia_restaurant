@@ -1,0 +1,28 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.site-kontakt {
+    height: 45vh;
+    display: flex;
+    position: relative;
+
+    &-bg {
+        background: url('../../assets/img/bg_kontakt.jpg') center/cover;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &-caption {
+        width: 50%;
+        text-align: center;
+        padding-top: 2%;
+    }
+
+    &-h3 {
+        color: black;
+        font-size: 3.5rem;
+        padding-bottom: 25px;
+    }
+}

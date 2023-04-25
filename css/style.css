@@ -571,6 +571,7 @@ a {
   padding-bottom: 25px;
   text-align: center;
   margin-top: 70px;
+  padding-top: 30px;
 }
 .site-qa-h4 {
   color: black;
@@ -585,6 +586,7 @@ a {
 
 .site-promo {
   display: flex;
+  padding-bottom: 70px;
 }
 .site-promo-img {
   width: 100%;
@@ -596,6 +598,7 @@ a {
   font-size: 3.5rem;
   padding-bottom: 25px;
   text-align: center;
+  padding-top: 30px;
 }
 .site-promo-h4 {
   color: black;
@@ -606,6 +609,29 @@ a {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.site-kontakt {
+  height: 45vh;
+  display: flex;
+  position: relative;
+}
+.site-kontakt-bg {
+  background: url("../../assets/img/bg_kontakt.jpg") center/cover;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.site-kontakt-caption {
+  width: 50%;
+  text-align: center;
+  padding-top: 2%;
+}
+.site-kontakt-h3 {
+  color: black;
+  font-size: 3.5rem;
+  padding-bottom: 25px;
 }
 
 .text-color-white {
@@ -627,6 +653,10 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.bg-gray {
+  background-color: #f3f2ef;
 }
 
 /*# sourceMappingURL=style.css.map */
